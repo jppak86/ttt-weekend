@@ -26,14 +26,16 @@ div {
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #reset-button {
   background-color: aquamarine;
   font-size: 24px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 5px auto;
   width: 200px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  color: goldenrod;
+  color: blue;
 }
