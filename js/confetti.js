@@ -1,4 +1,4 @@
-var confetti = {
+var confetti= {
 	maxCount: 500,	//set max confetti count
 	speed: 5,			//set the particle animation speed
 	frameInterval: 15,	//the confetti animation frame interval in milliseconds
