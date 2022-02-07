@@ -19,7 +19,7 @@ const winningcomb = [
 const squareEls = document.querySelectorAll('.board-sq')
 const messageEl = document.querySelector('#message')
 const resetBtn = document.querySelector('#reset-button').addEventListener('click', reset)
-
+document.querySelector('.board').addEventListener("click", handleClick)
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -56,11 +56,11 @@ function render(){
     if (board[idx] === 1){
       sql = "X"
       sqc = "red"
-      sqb = "blue"
+      sqb = "yellow"
     } else if(board[idx] === -1){
       sql = 'O';
       sqc = "blue"
-      sqb = "red"
+      sqb = "aqua"
     }else if(board[idx] === null){
       sql = ' ';
     }
@@ -71,7 +71,7 @@ function render(){
 
 
   if (isWinner === null){
-    console.log("turn" + turn)
+    // console.log("turn" + turn)
     messageEl.innerText = `This turn is ${turn === 1 ? 'X' : 'O'}!`;
   }else if (isWinner === 'T'){
     messageEl.innerText = 'Tie Game!'
@@ -82,20 +82,20 @@ function render(){
 
 }
 
-document.querySelector('.board').addEventListener("click", handleClick)
+
 
 function handleClick(evt){
   
   let squareIdx = parseInt(evt.target.id.replace('sq',''))
-  console.log("squareIdx = " + squareIdx)
+  // console.log("squareIdx = " + squareIdx)
   if (board[squareIdx]=== null && isWinner === null) {
     board[squareIdx] = turn
-    console.log("handleClick" + board[squareIdx])
+    // console.log("handleClick" + board[squareIdx])
     isWinner = getWinner();
     turn = turn * -1
     render()
 
-    console.log("isWinner is " + isWinner);
+    // console.log("isWinner is " + isWinner);
   }
 
 }
