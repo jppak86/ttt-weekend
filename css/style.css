@@ -28,14 +28,17 @@ div {
   vertical-align: middle;
   border-radius: 4px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  justify-content: center;
+  align-items: center;
 }
 
 #reset-button {
   background-color:rgb(161, 175, 148);
   font-size: 24px;
-  border-radius: 4px;
-  margin: 5px auto;
-  width: 200px;
+  border-radius: 6px;
+  margin: 2px auto;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   color:saddlebrown;
+  justify-content: center;
+  align-items: center;
 }

@@ -77,6 +77,7 @@ function render(){
     messageEl.innerText = 'Tie Game!'
   }else {
     messageEl.innerText = `${isWinner === 1 ? 'X' : 'O'} is winner!`
+    confetti.start(2000)
   }
  
 
