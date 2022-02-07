@@ -2,7 +2,7 @@ body {
     background-color: rosybrown;
 	/* Use a system font, if none are available use an available sans-sarif   font */
 	font-family: 'Nova Flat';
-  color:chartreuse;
+  color:rgb(47, 114, 5);
 	margin: 0;
   height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@ div {
 }
 
 #reset-button {
-  background-color:chartreuse;
+  background-color:rgb(161, 175, 148);
   font-size: 24px;
   border-radius: 4px;
   margin: 5px auto;
