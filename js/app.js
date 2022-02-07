@@ -55,12 +55,12 @@ function render(){
     //console.log("board[" + idx +"]" + board[idx]);
     if (board[idx] === 1){
       sql = "X"
-      sqc = "red"
-      sqb = "yellow"
+      sqc = "white"
+      sqb = "brown"
     } else if(board[idx] === -1){
       sql = 'O';
-      sqc = "blue"
-      sqb = "aqua"
+      sqc = "white"
+      sqb = "navy"
     }else if(board[idx] === null){
       sql = ' ';
     }

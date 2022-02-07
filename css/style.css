@@ -2,7 +2,7 @@ body {
     background-color: rosybrown;
 	/* Use a system font, if none are available use an available sans-sarif   font */
 	font-family: 'Nova Flat';
-  color: gold;
+  color:chartreuse;
 	margin: 0;
   height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@ section.board {
 }
 
 div {
-  border: 3px solid black;
+  border: 3px solid darkslategray;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
@@ -31,11 +31,11 @@ div {
 }
 
 #reset-button {
-  background-color: aquamarine;
+  background-color:chartreuse;
   font-size: 24px;
   border-radius: 4px;
   margin: 5px auto;
   width: 200px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  color: blue;
+  color:saddlebrown;
 }
